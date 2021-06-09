@@ -1,2 +1,2 @@
 # EuleRa
-A repo for my project euler solutions
+A repo for the first 100 project euler solutions.
