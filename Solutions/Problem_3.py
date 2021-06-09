@@ -16,8 +16,8 @@ def product(num_list):
 		ans *= x
 	return ans
 
-# Finds the largest prime of a number
-def largest_prime(target):
+# Factors a number into a list of its primes
+def factor(target):
 	# initialize prime list with the multiplicative identity 
 	prime_list = [1]
 
@@ -35,6 +35,11 @@ def largest_prime(target):
 			# try a new number
 			number_to_try += 1
 
+	return prime_list
+
+# Finds the largest prime of a number by factoring it
+def largest_prime(target):
+	prime_list = factor(target)
 	# return only the last element of the list
 	return prime_list[-1]
 
