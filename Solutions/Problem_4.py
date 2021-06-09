@@ -10,7 +10,7 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 """
 
 # Checks if given number is a palindrome
-def is_palindrome(x):
+def is_palindrome(x: int) -> bool:
 	# Convert the number to a string (list of characters)
 	num_list = str(x)
 
@@ -18,7 +18,7 @@ def is_palindrome(x):
 	return num_list == num_list[::-1]
 
 # Finds the largest palindrome made from the product of two numbers
-def find_largest_palindrome(upper_bound):
+def find_largest_palindrome(upper_bound: int) -> int:
 	# lower_bound must be the same length as upper_bound just with a 1 and 0's
 	lower_bound = int("1" + "0" * (len(str(upper_bound)) - 1))
 

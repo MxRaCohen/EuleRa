@@ -19,7 +19,7 @@ one hundred natural numbers and the square of the sum.
 """
 
 # Inclusively sum the squares
-def sum_squares(upper_bound):
+def sum_squares(upper_bound: int) -> int:
 	# Initialize answer with additive identity
 	ans = 0
 	for x in range(upper_bound + 1):
@@ -27,7 +27,7 @@ def sum_squares(upper_bound):
 	return ans
 
 # Inclusively square the sums
-def square_sums(upper_bound):
+def square_sums(upper_bound: int) -> int:
 	# Initizalize answer with additive identity
 	ans = 0
 	for x in range(upper_bound + 1):
@@ -35,7 +35,7 @@ def square_sums(upper_bound):
 	return ans ** 2
 
 # Computes and finds the difference between the above
-def square_sum_minus_sum_square(upper_bound):
+def square_sum_minus_sum_square(upper_bound: int) -> int:
 	sum_square = sum_squares(upper_bound)
 	square_sum = square_sums(upper_bound)
 	return square_sum - sum_square

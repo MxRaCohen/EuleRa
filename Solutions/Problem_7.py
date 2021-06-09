@@ -10,7 +10,7 @@ What is the 10,001st prime number?
 """
 
 # Finds the nth prime for a given n
-def find_nth_prime(n):
+def find_nth_prime(n: int) -> int:
 	# Initialize list of primes with first prime
 	prime_list = [2]
 

@@ -8,8 +8,10 @@ Description:
 What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 """
 
+PrimeFactors = dict[int, int]
+
 # Unfactors a dictionary of primes
-def unfactor(prime_dict):
+def unfactor(prime_dict: PrimeFactors) -> int:
 	# Initialize answer with multiplicative identity
 	ans = 1
 	# For every prime
@@ -19,7 +21,7 @@ def unfactor(prime_dict):
 	return ans
 
 # Factors a given number into a dictionary of its primes and counts 
-def factor(num):
+def factor(num: int) -> PrimeFactors:
 	# See Problem_3.py for more on this
 	primes = dict()
 	number_to_try = 2
@@ -34,7 +36,7 @@ def factor(num):
 	return primes
 
 # Combines two prime dicts so that any number divisible by one is divisible by both
-def combine_factors(dict_1, dict_2):
+def combine_factors(dict_1: PrimeFactors, dict_2: PrimeFactors) -> PrimeFactors:
 	# For every number in the first dictionary of factors
 	for num in dict_1.keys():
 		# Check if it's a factor of the second dictionary
@@ -47,7 +49,7 @@ def combine_factors(dict_1, dict_2):
 	return dict_2
 
 # Finds all primes up to the given upper_bound
-def find_primes(upper_bound):
+def find_primes(upper_bound: int) -> int:
 	# Initialize answer dict
 	primes = {}
 

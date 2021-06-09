@@ -8,7 +8,7 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 Find the sum of all the multiples of 3 or 5 below 1000.
 """
 
-def find_sum_3_and_5(upper_bound):
+def find_sum_3_and_5(upper_bound: int) -> int:
 	# Find the sum of all multiples of 3 under the upperbound
 	sum_3 = sum([i for i in range(0, upper_bound, 3)])
 
@@ -24,7 +24,7 @@ def find_sum_3_and_5(upper_bound):
 
 # or
 
-def find_sum_3_and_5_method_2(upper_bound):
+def find_sum_3_and_5_method_2(upper_bound: int) -> int:
 	# Create a list to hold our discovered multiples
 	multiples_of_3_or_5 = list()
 
@@ -33,7 +33,7 @@ def find_sum_3_and_5_method_2(upper_bound):
 		if i % 3 == 0 or i % 5 == 0:
 			# if yes, append it to our list
 			multiples_of_3_or_5.append(i)
-			
+
 	# sum up our list to get the answer
 	ans = sum(multiples_of_3_or_5)
 	return ans

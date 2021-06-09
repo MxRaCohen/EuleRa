@@ -14,7 +14,7 @@ find the sum of the even-valued terms.
 """
 
 # Find all Fibonacci terms less than upper bound
-def find_fib_list(upper_bound):
+def find_fib_list(upper_bound: int) -> list[int]:
 	# initialize fib list
 	fib_terms = [1, 2]
 	# While our largest term is smaller than our bound...
@@ -27,7 +27,7 @@ def find_fib_list(upper_bound):
 	return fib_terms[:-1]
 
 # Select the even terms
-def evenify_list(input_list):
+def evenify_list(input_list: list[int]) -> list[int]:
 	# initialize answer list
 	output_list = list()
 	# loop through input
@@ -39,7 +39,7 @@ def evenify_list(input_list):
 	return output_list
 
 # Find the terms, Sum the even terms, and return
-def sum_even_fib(upper_bound):
+def sum_even_fib(upper_bound: int) -> int:
 	fib_list = find_fib_list(upper_bound)
 	even_fib = evenify_list(fib_list)
 	return sum(even_fib)

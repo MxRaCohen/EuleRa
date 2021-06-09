@@ -9,7 +9,7 @@ What is the largest prime factor of the number 600851475143 ?
 """
 
 # Takes the product of all elements in a list
-def product(num_list):
+def product(num_list: list[int]) -> int:
 	# initialize answer with the multiplicative identity
 	ans = 1
 	for x in num_list:
@@ -17,7 +17,7 @@ def product(num_list):
 	return ans
 
 # Factors a number into a list of its primes
-def factor(target):
+def factor(target: int) -> list[int]:
 	# initialize prime list with the multiplicative identity 
 	prime_list = [1]
 
@@ -38,7 +38,7 @@ def factor(target):
 	return prime_list
 
 # Finds the largest prime of a number by factoring it
-def largest_prime(target):
+def largest_prime(target: int) -> int:
 	prime_list = factor(target)
 	# return only the last element of the list
 	return prime_list[-1]
