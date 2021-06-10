@@ -44,5 +44,5 @@ def largest_prime(target: int) -> int:
 	return prime_list[-1]
 
 # Check test solution matches description and generate real answer
-print(largest_prime(13195))
-print(largest_prime(600851475143))
+# print(largest_prime(13195))
+# print(largest_prime(600851475143))
