@@ -12,7 +12,7 @@ The product of these numbers is 26 × 63 × 78 × 14 = 1788696.
 What is the greatest product of four adjacent numbers in the same direction (up, down, left, right, or diagonally) in the 20×20 grid?
 """
 
-from Problem_3 import product
+from Problem_03 import product
 
 input_grid = ("08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08" + "\n" +
               "49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00" + "\n" +

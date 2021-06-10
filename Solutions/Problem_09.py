@@ -12,7 +12,7 @@ There exists exactly one Pythagorean triplet for which a + b + c = 1000.
 Find the product a * b * c.
 """
 
-from Problem_3 import product
+from Problem_03 import product
 
 # Finds the first Pythagorean triplet which adds up to a given sum
 def find_pythag_triplet_with_sum(target: int) -> list[int]:
