@@ -33,7 +33,7 @@ def count_routes(n: int) -> int:
 	return n_choose_k(2 * n, n)
 
 # Check test solution matches description and generate real answer
-print(count_routes(1)) # 2 paths
-print(count_routes(2)) # 6 paths
-print(count_routes(3)) # 20 paths
-print(count_routes(20)) # ?
+# print(count_routes(1)) # 2 paths
+# print(count_routes(2)) # 6 paths
+# print(count_routes(3)) # 20 paths
+# print(count_routes(20)) # ?

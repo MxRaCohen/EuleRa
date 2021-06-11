@@ -18,5 +18,5 @@ def sum_digits(n: int) -> int:
 	return sum(digit_list)
 
 # Check test solution matches description and generate real answer
-print(sum_digits(2 ** 15)) 
-print(sum_digits(2 ** 1000)) 
+# print(sum_digits(2 ** 15)) 
+# print(sum_digits(2 ** 1000)) 
