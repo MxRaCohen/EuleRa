@@ -11,21 +11,21 @@ Each problem that develops a function for further use has its print line comment
 
 
 ## `product` from Problem_03
-Takes the product of all elements in a list of numbers
+Takes the product of all elements in a list of numbers  
 `def product(num_list: list[int]) -> int:`
 
 ## `factor_num` from Problem_12
-Factors the given integer into a list
+Factors the given integer into a list  
 `def factor_num(num: int) -> list[int]:`
 
 ## `factorial` from Problem_15
-Returns the product of 1 to n for any int n 
+Returns the product of 1 to n for any int n   
 `def factorial(n: int) -> int:`
 
 ## `sum_digits` from Problem_16
-Adds together the individual digits of a given number
+Adds together the individual digits of a given number  
 `def sum_digits(n: int) -> int:`
 
 ## `max_path_sum` from Problem_18
-Given a balanced triangle of numbers, finds the maximum total from top to bottom of the triangle 
+Given a balanced triangle of numbers, finds the maximum total from top to bottom of the triangle   
 `def max_path_sum(raw_tri: list[str]) -> int:`
