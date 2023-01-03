@@ -62,5 +62,5 @@ def find_tri_with_divisors(n: int) -> int:
 
 
 # Check test solution matches description and generate real answer
-print(find_tri_with_divisors(5))
-print(find_tri_with_divisors(500))
+# print(find_tri_with_divisors(5))
+# print(find_tri_with_divisors(500))
