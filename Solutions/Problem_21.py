@@ -1,6 +1,6 @@
 """
 Author: Ra Cohen (@MxRaCohen)
-Date: June 11, 2021
+Date: January 18, 2022
 Problem URL: https://projecteuler.net/problem=21
 Description: 
 Let d(n) be defined as the sum of proper divisors of n 
@@ -22,7 +22,7 @@ def d(n: int) -> int:
 	return sum(factors)
 
 def check_amicable(a: int, b: int) -> bool:
-	if d(a) == b and d(b) == a:
+	if d(a) == b and d(b) == a and a != b:
 		return True
 	return False
 
